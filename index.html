@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+      content="This is the index.html file for WDD 131 – Dynamic Web Fundamentals, created by Ajayi Oluwatimileyin. It serves as the main entry point for the course content and provides an introduction to dynamic web development concepts.">
+    <meta name="author" content="Ajayi Oluwatimileyin">
+    <title>WDD 131: Dynamic Web Fundamentals – Ajayi Oluwatimileyin</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <header>
+        <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">I-learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+            <a href="final-project/">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Ajayi Oluwatimileyin</h1>
+
+        <section class="card">
+            <h2 class="head-card">About Me</h2>
+            <div class="about-me">
+                <img src="images/My_picture.jpeg" alt="Ajayi Oluwatimileyin's Profile Picture">
+                
+                <p>My name is Ajayi Oluwatimileyin. I am a student in WDD 131: Dynamic Web Fundamentals. I am passionate about web development and enjoy creating dynamic and interactive websites. I am currently learning JavaScript and its applications in web development.</p>
+            </div>
+
+            <div class="country">
+                <h2>Lagos, Nigeria</h2>
+                <figure>
+                    <img src="images/Flag_of_Nigeria.png" alt="Flag of Nigeria">
+
+                    <figcaption>Flag of Nigeria</figcaption>
+                </figure>
+                <p>Lagos is the largest city in Nigeria and one of the fastest-growing cities in the world. It is a major financial center in Africa and is known for its vibrant culture, bustling markets, and beautiful beaches. Lagos is a melting pot of different cultures and offers a unique blend of traditional and modern lifestyles.</p>
+            </div>
+           
+        </section>
+
+        <section class="card">
+            <h2 class="head-card">Web Dev Resources</h2>
+            <div class="web-list">
+                <ul>
+                    <li><a href="http://dev.to/">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/">Udemy</a></li>
+                    <li><a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Ajayi Oluwatimileyin. All rights reserved.</p>
+        <p id="lastModified">Last Modification:</p>
+    </footer>
 </body>
 </html>
