@@ -12,11 +12,12 @@ body {
 }
 
 header {
-    color: white;
+    font-size: medium;
 }
 
 #course-title {
     background-color: rgb(4, 111, 75);
+    color: white;
     font-size: 1.5rem;
     font-weight: 400;
     padding: 10px;
