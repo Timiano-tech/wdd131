@@ -19,11 +19,8 @@
 
 
     nav {
-        display: flex;
+        display: flex !important;
         gap: 1rem;
-    }
-    .hide {
-        display: flex;
     }
 
     nav a {

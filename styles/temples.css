@@ -42,13 +42,13 @@ body {
 
 /* Navigation */
 
-.navigation {
+nav {
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
 }
 
-.navigation a {
+nav a {
     color: white;
     text-decoration: none;
     padding: 1rem;
@@ -56,7 +56,7 @@ body {
     font-weight: bold;
 }
 
-.navigation a:hover {
+nav a:hover {
     background-color: white;
     color: #4b006e;
     border-radius: 5px;
@@ -82,7 +82,7 @@ main h1 {
     margin: 2rem 0;
 }
 
-/* Gallery Layout */
+
 
 .temple-grid {
     display: grid;
