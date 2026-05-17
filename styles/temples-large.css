@@ -21,6 +21,8 @@
     nav {
         display: flex !important;
         gap: 1rem;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 
     nav a {
@@ -33,8 +35,9 @@
 
     nav a:hover {
         background-color: white;
-        color: #4b006e;
-        border-radius: 5px;
+        color: green;
+        border-radius: 2px;
+        transition: all 0.3s ease;
     }
 
     main h1 {
