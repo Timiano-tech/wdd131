@@ -1,0 +1,62 @@
+@media screen and (min-width: 768px) {
+
+    #menu-button {
+        display: none;
+    }
+
+    header {
+        background-color: #4b006e;
+        color: white;
+        padding: 1rem 3rem;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+    }
+
+    header h2 {
+         margin-left: 10px;
+    }
+
+
+    nav {
+        display: flex;
+        gap: 1rem;
+    }
+    .hide {
+        display: flex;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 0.5rem;
+    }
+
+    nav a:hover {
+        background-color: white;
+        color: #4b006e;
+        border-radius: 5px;
+    }
+
+    main h1 {
+        text-align: center;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+    .temple-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+}
+
+footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
