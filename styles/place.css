@@ -113,23 +113,12 @@ dd {
 
 /* WEATHER ICON */
 .weather-icon {
-    font-size: 1.2rem;
+    width: 32px;
+    height: 32px;
     margin-left: 0.5rem;
     display: inline-block;
-}
-
-footer {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    text-align: center;
-    padding: 1.5rem 1rem;
-    font-size: 0.85rem;
-    line-height: 1.6;
-    margin-top: 2rem;
-}
-
-footer p {
-    margin: 0.5rem 0;
+    vertical-align: middle;
+    object-fit: contain;
 }
 
 /* Ensure responsive images */
