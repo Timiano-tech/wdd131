@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: green;
+    --secondary-color: #f0f0f0;
+    --text-color: #ffffff;
+}
+
+body {
+    font-family: "Bricolage Grotesque", sans-serif;
+    background-color: #fafafa;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    color: var(--text-color);
+    text-align: center;
+    padding: 0.5rem 0;
+    letter-spacing: 1px;
+}
+
+/* HERO SECTION */
+.hero-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero picture,
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero img {
+    height: auto;
+    min-height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+    max-width: 100%;
+}
+
+/* CARDS */
+.card-data,
+.card-weather {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* CARD HEADINGS */
+.card-data h2,
+.card-weather h2 {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 1rem;
+    margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+    border-radius: 12px 12px 0 0;
+    font-size: 1.75rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* DEFINITION LIST */
+dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem 1.5rem;
+    width: 100%;
+}
+
+dt {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+dd {
+    margin: 0;
+    color: #666;
+    font-size: 0.95rem;
+    word-break: break-word;
+}
+
+/* WEATHER ICON */
+.weather-icon {
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    display: inline-block;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Ensure responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}

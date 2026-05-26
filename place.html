@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="This is the index.html file for WDD 131 – Dynamic Web Fundamentals, created by Ajayi Oluwatimileyin.">
+    <meta name="author" content="Ajayi Oluwatimileyin">
+    <title>WDD 131: NIGERIA</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+          <h1>NIGERIA</h1>
+        </nav>
+    </header>
+
+    <!-- HERO WRAPPER -->
+
+    <div class="hero-wrapper">
+
+        <!-- HERO IMAGE -->
+
+        <section class="hero">
+
+            <picture>
+
+                <source
+                    media="(min-width: 768px)"
+                    srcset="images/Nigeria.webp">
+
+                <img
+                    src="images/Nigeria2.webp"
+                    alt="Scenic view of Nigeria with a river and lush greenery">
+
+            </picture>
+
+        </section>
+
+    <main class="container">
+        <section class="card-data">
+            
+                <h2>Data</h2>
+                <dl>
+                    <dt>Area:</dt>
+                    <dd>923,769 sq km</dd>
+                    <dt>Population:</dt>
+                    <dd>223,804,632</dd>
+                    <dt>Capital:</dt>
+                    <dd>Abuja</dd>
+                    <dt>Languages:</dt>
+                    <dd>English, Hausa, Yoruba, Igbo</dd>
+                    <dt>Currency:</dt>
+                    <dd>Nigerian Naira</dd>
+                    <dt>Time Zone:</dt>
+                    <dd>UTC+1</dd>
+                    <dt>Calling Code:</dt>
+                    <dd>+234</dd>
+                    <dt>Internet TLD:</dt>
+                    <dd>.ng</dd>
+                </dl>
+            
+
+        </section>
+
+        <section class="card-weather">
+                <h2>Weather <span class="weather-icon">☀️</span></h2>
+                <dl>
+                    <dt>Temperature:</dt>
+                    <dd>28°C</dd>
+                    <dt>Conditions:</dt>
+                    <dd>Sunny</dd>
+                    <dt>Wind:</dt>
+                    <dd>12 km/h</dd>
+                    <dt>Humidity:</dt>
+                    <dd>65%</dd>
+                </dl>
+        </section>   
+    </main>
+
+    </div>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Ajayi Oluwatimileyin. All rights reserved.</p>
+        <p id="lastModified">Last Modification:</p>
+    </footer>
+</body>
+</html>
