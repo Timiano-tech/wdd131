@@ -77,6 +77,21 @@ picture:nth-of-type(6) img {
     animation-delay: 0.5s;
 }
 
+footer {
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.72);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
