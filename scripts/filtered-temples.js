@@ -154,3 +154,49 @@ function displayTemples(list) {
 
 // populate on load
 displayTemples(temples);
+
+// Filter functions
+function filterTemples(type) {
+  return temples.filter(temple => {
+
+    const year = parseInt(temple.dedicated.split(',')[0]);
+    
+    switch(type.toLowerCase()) {
+      case 'old':
+        return year < 1900;
+      case 'new':
+        return year > 2000;
+      case 'large':
+        return temple.area > 90000;
+      case 'small':
+        return temple.area < 10000;
+      case 'home':
+      default:
+        return true;
+    }
+  });
+}
+
+// Add event listeners to nav links using IDs
+const homeLink = document.getElementById('home');
+const oldLink = document.getElementById('old');
+const newLink = document.getElementById('new');
+const largeLink = document.getElementById('large');
+const smallLink = document.getElementById('small');
+
+[homeLink, oldLink, newLink, largeLink, smallLink].forEach(link => {
+  if (link) {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const filterType = link.id;
+      const filtered = filterTemples(filterType);
+      displayTemples(filtered);
+      
+      
+      const mainHeading = document.querySelector('.main-header');
+      if (mainHeading) {
+        mainHeading.textContent = link.textContent;
+      }
+    });
+  }
+});
