@@ -79,7 +79,46 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
-  // Add more temple objects here...
+   {
+        templeName: "Belém Brazil Temple",
+        location: "Belém Brazil",
+        dedicated: "2022, November, 20",
+        area: 28675,
+        imageUrl: 
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/belem-brazil/1280x800/belem_brazil_temple_exterior2.jpg"
+    },
+    {
+        templeName: "Bountiful Utah Temple",
+        location: "Bountiful Utah",
+        dedicated: "1995, January, 14",
+        area: 104000,
+        imageUrl: 
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bountiful-utah/1280x800/bountiful-temple-766347-wallpaper.jpg"
+    },
+    {
+        templeName: "Brigham City Utah Temple",
+        location: "Brigham City Utah", 
+        dedicated: "2012, September, 23",
+        area: 36000,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/brigham-city-utah/1280x800/brigham-city-temple-lds-1078623-wallpaper.jpg"
+    },
+    {
+        templeName: "Cedar City Utah Temple",
+        location: "Cedar City Utah",
+        dedicated: "2017, December, 10",
+        area: 42657,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/cedar-city-utah/1200x675/Cedar-City-1978603.jpg"
+    },
+    {
+        templeName: "Chicago Illinois Temple",
+        location: "Glenview Illinois",
+        dedicated: "1985, August, 13",
+        area: 37062,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/chicago-illinois/1280x800/Chicago-Temple_0784.jpg"
+    }
 ];
 
 // Create and insert temple cards into the .temple-grid
