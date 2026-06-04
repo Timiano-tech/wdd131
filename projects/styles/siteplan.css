@@ -120,6 +120,55 @@ section li {
 }
 
 
+.color-usage-example {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.primary-heading {
+    color: var(--primary-color);
+    font-family: Georgia, serif;
+    font-size: 1.3em;
+    margin: 0 0 10px 0;
+}
+
+.primary-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+
+.secondary-text {
+    color: var(--secondary-color);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+.secondary-label {
+    display: block;
+    color: var(--secondary-color);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.accent-background {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 4px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+
 .font-example {
     margin-bottom: 20px;
     padding: 15px;
@@ -131,6 +180,38 @@ section li {
 .font-example h3 {
     font-size: 1.5em;
     margin-bottom: 5px;
+}
+
+/* Font Examples */
+.font1-heading {
+    font-family: Georgia, serif;
+    color: var(--primary-color);
+}
+
+.font1-example {
+    font-family: Georgia, serif;
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+.font2-heading {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: var(--primary-color);
+}
+
+.font2-example {
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.font3-heading {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.font3-example {
+    font-family: Georgia, serif;
+    font-weight: bold;
 }
 
 
