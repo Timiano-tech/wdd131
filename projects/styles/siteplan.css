@@ -1,0 +1,256 @@
+
+:root {
+    --primary-color: #C0622A;      
+    --secondary-color: #3B2A1A;    
+    --accent-color: #F0E8DA;       
+    --text-color: #3B2A1A;
+    --background-color: white;
+    --general-color: green;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+
+header {
+    background-color: var(--general-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+section {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+
+section h2 {
+    color: var(--general-color);
+    font-size: 2em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+}
+
+section h3 {
+    color: var(--general-color);
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+section ul {
+    margin-left: 20px;
+}
+
+section li {
+    margin-bottom: 8px;
+}
+
+
+.logo-placeholder {
+    background-color: var(--background-color);
+    padding: 40px;
+    text-align: center;
+    border: 2px dashed var(--general-color);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: #999;
+}
+
+
+.color-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.color-item {
+    flex: 1;
+    min-width: 200px;
+}
+
+.color-swatch {
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+}
+
+.primary-color {
+    background-color: var(--primary-color);
+}
+
+.secondary-color {
+    background-color: var(--secondary-color);
+}
+
+.accent-color {
+    background-color: var(--accent-color);
+}
+
+
+.font-example {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    border: 2px dashed var(--general-color);
+}
+
+.font-example h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+
+.wireframe-placeholder {
+    background-color: var(--background-color);
+    padding: 60px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 5px;
+    color: var(--general-color);
+    font-size: 1.1em;
+    border: 2px dashed var(--general-color);
+}
+
+
+footer {
+    background-color: var(--general-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* Responsive - Mobile First */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    header {
+        padding: 15px 10px;
+        margin-bottom: 20px;
+    }
+    
+    main {
+        padding: 0 10px;
+    }
+    
+    section {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    section h2 {
+        font-size: 1.4em;
+        margin-bottom: 10px;
+    }
+    
+    section h3 {
+        font-size: 1.1em;
+    }
+    
+    .color-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .color-item {
+        min-width: 100%;
+    }
+    
+    .color-swatch {
+        height: 80px;
+    }
+    
+    .font-example {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .wireframe-placeholder {
+        padding: 40px 10px;
+        font-size: 0.9em;
+    }
+    
+    .wireframe-placeholder img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    footer {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
+
+/* Tablet Size */
+@media (min-width: 601px) and (max-width: 900px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+    
+    section {
+        padding: 18px;
+    }
+    
+    section h2 {
+        font-size: 1.8em;
+    }
+    
+    .color-container {
+        flex-direction: row;
+    }
+    
+    .color-item {
+        min-width: calc(33.333% - 14px);
+    }
+}
+
+/* Desktop Size */
+@media (min-width: 901px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    
+    section {
+        padding: 20px;
+    }
+    
+    section h2 {
+        font-size: 2em;
+    }
+}
