@@ -1,8 +1,8 @@
 
 :root {
-    --primary-color: #C0622A;      /* Warm brown from logo */
-    --secondary-color: #3B2A1A;    /* Dark brown from logo */
-    --accent-color: #F0E8DA;       /* Light cream from logo */
+    --primary-color: #C0622A;
+    --secondary-color: #3B2A1A;
+    --accent-color: #F0E8DA;
     --text-color: #3B2A1A;
     --background-color: #F0E8DA;
 }
@@ -14,15 +14,14 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
 }
 
-
 header {
-    font-family: 'Georgia', serif;
+    font-family: Georgia, serif;
     background-color: var(--primary-color);
     color: white;
     padding: 20px;
@@ -40,13 +39,11 @@ main {
     padding: 0 20px;
 }
 
-
 section {
     background-color: white;
     margin-bottom: 30px;
     padding: 20px;
     border-radius: 5px;
-    
 }
 
 section h2 {
@@ -75,7 +72,6 @@ section li {
     margin-bottom: 8px;
 }
 
-
 .logo-placeholder {
     background-color: white;
     padding: 40px;
@@ -85,7 +81,6 @@ section li {
     margin-bottom: 20px;
     color: #999;
 }
-
 
 .color-container {
     display: flex;
@@ -119,7 +114,6 @@ section li {
     background-color: var(--accent-color);
 }
 
-
 .color-usage-example {
     margin-top: 15px;
     padding: 15px;
@@ -127,8 +121,11 @@ section li {
     border: 1px solid #ddd;
 }
 
-.primary-heading {
+.primary-heading, .font1-heading, .font2-heading, .font3-heading {
     color: var(--primary-color);
+}
+
+.primary-heading {
     font-family: Georgia, serif;
     font-size: 1.3em;
     margin: 0 0 10px 0;
@@ -144,7 +141,6 @@ section li {
     cursor: pointer;
     font-size: 0.9em;
 }
-
 
 .secondary-text {
     color: var(--secondary-color);
@@ -168,7 +164,6 @@ section li {
     font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-
 .font-example {
     margin-bottom: 20px;
     padding: 15px;
@@ -182,10 +177,8 @@ section li {
     margin-bottom: 5px;
 }
 
-/* Font Examples */
 .font1-heading {
     font-family: Georgia, serif;
-    color: var(--primary-color);
 }
 
 .font1-example {
@@ -196,7 +189,6 @@ section li {
 
 .font2-heading {
     font-family: 'Segoe UI', Arial, sans-serif;
-    color: var(--primary-color);
 }
 
 .font2-example {
@@ -206,14 +198,12 @@ section li {
 .font3-heading {
     font-family: Georgia, serif;
     font-weight: bold;
-    color: var(--primary-color);
 }
 
 .font3-example {
     font-family: Georgia, serif;
     font-weight: bold;
 }
-
 
 .wireframe-placeholder {
     background-color: var(--accent-color);
@@ -226,7 +216,6 @@ section li {
     border: 2px dashed var(--primary-color);
 }
 
-
 footer {
     background-color: var(--primary-color);
     color: white;
@@ -235,103 +224,76 @@ footer {
     margin-top: 40px;
 }
 
-/* Responsive - Mobile First */
 @media (max-width: 600px) {
     header h1 {
         font-size: 1.8em;
     }
-    
+
     header {
         padding: 15px 10px;
         margin-bottom: 20px;
     }
-    
+
     main {
         padding: 0 10px;
     }
-    
+
     section {
         padding: 15px;
         margin-bottom: 15px;
     }
-    
+
     section h2 {
         font-size: 1.4em;
-        margin-bottom: 10px;
     }
-    
+
     section h3 {
         font-size: 1.1em;
     }
-    
+
     .color-container {
         flex-direction: column;
         gap: 15px;
     }
-    
+
     .color-item {
         min-width: 100%;
     }
-    
+
     .color-swatch {
         height: 80px;
     }
-    
+
     .font-example {
         padding: 10px;
-        margin-bottom: 15px;
     }
-    
+
     .wireframe-placeholder {
         padding: 40px 10px;
         font-size: 0.9em;
     }
-    
+
     .wireframe-placeholder img {
         max-width: 100%;
         height: auto;
     }
-    
+
     footer {
         padding: 10px;
         font-size: 0.9em;
     }
 }
 
-/* Tablet Size */
 @media (min-width: 601px) and (max-width: 900px) {
     header h1 {
         font-size: 2.2em;
     }
-    
-    section {
-        padding: 18px;
-    }
-    
+
     section h2 {
         font-size: 1.8em;
     }
-    
-    .color-container {
-        flex-direction: row;
-    }
-    
+
     .color-item {
         min-width: calc(33.333% - 14px);
-    }
-}
-
-/* Desktop Size */
-@media (min-width: 901px) {
-    header h1 {
-        font-size: 2.5em;
-    }
-    
-    section {
-        padding: 20px;
-    }
-    
-    section h2 {
-        font-size: 2em;
     }
 }
