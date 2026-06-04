@@ -23,6 +23,7 @@ body {
 
 
 header {
+    font-family: 'Georgia', serif;
     background-color: var(--general-color);
     color: white;
     padding: 20px;
