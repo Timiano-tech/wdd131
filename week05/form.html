@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="This is a product review form that is created by Ajayi Oluwatimileyin.">
+    <meta name="author" content="Ajayi Oluwatimileyin">
+    <title>WDD 131: Form</title>
+    <link rel="stylesheet" href="styles/form.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+          <h1>Product Review</h1>
+        </nav>
+    </header>
+
+    <main>
+       <div class="form-container">
+            <form id="reviewForm" method="get" action="review.html">
+                <label for="productName">Product Name:</label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>*Select a Product ...*</option>
+                </select>
+
+                <label for="installDate">Date of Installation:</label>
+                <input type="date" id="installDate" name="installDate" required>
+
+                <fieldset>
+                    <legend>Overall Rating</legend>
+                    <div class="rating-group">
+                        <label for="rating1"><input type="radio" id="rating1" name="rating" value="1" required> ☆</label>
+                        <label for="rating2"><input type="radio" id="rating2" name="rating" value="2" required> ☆☆</label>
+                        <label for="rating3"><input type="radio" id="rating3" name="rating" value="3" required> ☆☆☆</label>
+                        <label for="rating4"><input type="radio" id="rating4" name="rating" value="4" required> ☆☆☆☆</label>
+                        <label for="rating5"><input type="radio" id="rating5" name="rating" value="5" required> ☆☆☆☆☆</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Useful Features</legend>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="features" value="durable"> Durable</label>
+                        <label><input type="checkbox" name="features" value="affordable"> Affordable</label>
+                        <label><input type="checkbox" name="features" value="easy-to-use"> Easy to Use</label>
+                        <label><input type="checkbox" name="features" value="efficient"> Efficient</label>
+                        <label><input type="checkbox" name="features" value="reliable"> Reliable</label>
+                    </div>
+                </fieldset>
+
+                <label for="reviewText">Written Review:</label>
+                <textarea id="reviewText" name="reviewText" rows="4"></textarea>
+
+                <label for="reviewerName">Your Name:</label>
+                <input type="text" id="reviewerName" name="reviewerName">
+
+                <input type="submit" value="Submit Review">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+         <p>&copy; <span id="currentyear"></span> Ajayi Oluwatimileyin. All rights reserved.</p>
+        <p id="lastModified">Last Modification:</p>
+    </footer>
+</body>
+</html>
