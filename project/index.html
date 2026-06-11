@@ -15,24 +15,22 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo-placeholder">
-               <a href="#">
-                <img class="logo-image" src="images/bookswap-logo.webp" alt="BookSwap Logo">
+        <nav aria-label="Primary navigation">
+            <a class="logo-placeholder" href="index.html">
+                <img class="logo-image" src="images/bookswap-logo.webp" alt="BookSwap Club logo">
                 <h1><span class="logo-alone">Book</span>Swap Club</h1>
-               </a> 
-            </div>
-            <ul class="nav-links">
-                <li><a href="schedule.html">Schedule</a></li>
-                <li><a href="book-list.html">Book List</a></li>
-                <li><a href="offer-book.html">Offer a Book</a></li>
-            </ul>
-
+            </a>
             <button class="hamburger-menu" type="button" aria-label="Open navigation menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
+            <ul class="nav-links">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="book-list.html">Book List</a></li>
+                <li><a href="offer-book.html">Offer a Book</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -46,7 +44,7 @@
             </div>
 
             <div class="hero-image">
-                <img src="images/front-view-books-upside-down.png" alt="Front view of books upside down">
+                <img class="lazy-image" data-src="images/front-view-books-upside-down.png" alt="Front view of books upside down" loading="lazy">
             </div>
         </section>
 
@@ -59,7 +57,7 @@
                 <div class="book-title" id="book-title"></div>
                 <div class="book-author" id="book-author"></div>
                 <div class="book-desc" id="book-desc"></div>
-                <button class="btn-next" onclick="nextBook()">
+                <button class="btn-next" type="button">
                     Next featured book
                 </button>
                 </div>
