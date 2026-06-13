@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book List | BookSwap Club</title>
+  <meta name="description" content="Browse the current Lagos BookSwap Club book list and find your next community read.">
+  <meta name="author" content="Ajayi Oluwatimileyin">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/website.css">
+  <script src="scripts/website.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav aria-label="Primary navigation">
+      <a class="logo-placeholder" href="index.html">
+        <img class="logo-image" src="images/bookswap-logo.webp" alt="BookSwap Club logo">
+        <h1><span class="logo-alone">Book</span>Swap Club</h1>
+      </a>
+      <button class="hamburger-menu" type="button" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="book-list.html" aria-current="page">Book List</a></li>
+        <li><a href="offer-book.html">Offer a Book</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-content">
+        <p class="hero-eyebrow">Community Reads  Free Exchange</p>
+        <h1 class="hero-headline">Explore the current <em>collection available for swap</em></h1>
+        <p class="hero-sub">Find a book that matches your interests, then bring it to the next meetup or reserve it with a neighbor.</p>
+        <div class="hero-actions">
+          <label for="search-books" class="screen-reader-only">Search book list</label>
+          <input id="search-books" class="search-input" type="search" placeholder="Search by title, author, or genre">
+        </div>
+      </div>
+      <div class="page-hero-image">
+        <img class="lazy-image" data-src="images/front-view-books-upside-down.png" alt="Books arranged on a table ready to swap" loading="lazy">
+      </div>
+    </section>
+    <section class="page-width">
+      <div class="section-header"><h2>Current Book List</h2></div>
+      <p class="page-copy">Each title is contributed by a member of the Lagos BookSwap Club. Use the search field to narrow the list and discover a story that suits your next reading moment.</p>
+      <div class="book-grid" aria-live="polite"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Ajayi Oluwatimileyin - BookSwap Club. All rights reserved.</p>
+    <p id="lastModified">Last Modification:</p>
+  </footer>
+</body>
+</html>

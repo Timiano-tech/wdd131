@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offer a Book | BookSwap Club</title>
+  <meta name="description" content="Offer a book to the Lagos BookSwap Club community and keep track of your local submissions.">
+  <meta name="author" content="Ajayi Oluwatimileyin">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/website.css">
+  <script src="scripts/website.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav aria-label="Primary navigation">
+      <a class="logo-placeholder" href="index.html">
+        <img class="logo-image" src="images/bookswap-logo.webp" alt="BookSwap Club logo">
+        <h1><span class="logo-alone">Book</span>Swap Club</h1>
+      </a>
+      <button class="hamburger-menu" type="button" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="book-list.html">Book List</a></li>
+        <li><a href="offer-book.html" aria-current="page">Offer a Book</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-content">
+        <p class="hero-eyebrow">Community Offer</p>
+        <h1 class="hero-headline">Share a book <em>with your neighbors</em></h1>
+        <p class="hero-sub">Fill out the form below to add your book offer to the local storage list. Offers stay saved on your device for future sessions.</p>
+      </div>
+      <div class="page-hero-image">
+        <img class="lazy-image" src="images/book2.png" alt="Community members sharing books at a table" loading="lazy">
+      </div>
+    </section>
+    <section class="page-width">
+      <div class="section-header"><h2>Offer a Book</h2></div>
+      <form class="offer-form" id="offer-form">
+        <fieldset>
+          <legend>Book details</legend>
+          <div class="form-group">
+            <label for="title">Book title</label>
+            <input id="title" name="title" type="text" required placeholder="Enter the book title">
+          </div>
+          <div class="form-group">
+            <label for="author">Author</label>
+            <input id="author" name="author" type="text" required placeholder="Enter the author name">
+          </div>
+          <div class="form-group">
+            <label for="genre">Genre</label>
+            <select id="genre" name="genre" required>
+              <option value="">Choose a genre</option>
+              <option>Fiction</option>
+              <option>Nonfiction</option>
+              <option>Young Adult</option>
+              <option>Memoir</option>
+              <option>Self-Help</option>
+              <option>Poetry</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Notes</legend>
+          <div class="form-group">
+            <label for="notes">Offer notes</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Tell neighbors what makes this book great."></textarea>
+          </div>
+          <div class="form-group">
+            <label for="contact">Contact (optional)</label>
+            <input id="contact" name="contact" type="text" placeholder="Phone, email, or meetup note">
+          </div>
+        </fieldset>
+        <div class="form-actions">
+          <button class="btn-next" type="submit">Save Offer</button>
+          <button class="secondary-btn" type="button" id="clear-offers">Clear saved offers</button>
+        </div>
+      </form>
+      <section class="saved-offers-section">
+        <div class="section-header"><h2>Your saved offers</h2></div>
+        <p class="offer-meta">You have <strong id="offer-count">0</strong> saved offers.</p>
+        <div class="saved-offers" id="saved-offers" aria-live="polite"></div>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Ajayi Oluwatimileyin - BookSwap Club. All rights reserved.</p>
+    <p id="lastModified">Last Modification:</p>
+  </footer>
+</body>
+</html>
